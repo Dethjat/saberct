@@ -1,1 +1,19 @@
-outdated
+_G.successCode = "SABER CT: Code 200 (Successful)"
+_G.unsuccessfulCode = "SABER CT: Code 401 (Unsuccessful)"
+_G.v3 = game.Players.LocalPlayer
+_G.v2 = false
+_G.v2 = "3t2433bg35hg4tge3r3"
+if (_G.Key == _G.v2) then
+    _G.v1 = true
+    print(_G.successCode)
+else
+    _G.v1 = false
+    print(_G.unsuccessfulCode)
+end
+
+if (_G.v1 == true) then
+    print(_G.successCode)
+else
+    print(_G.unsuccessfulCode)
+    _G.v3:Kick(_G.unsuccessfulCode)
+end
